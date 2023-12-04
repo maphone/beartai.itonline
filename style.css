@@ -179,12 +179,13 @@ body{
 }
 
 .seprator{
-    margin: 50px 50px 30px;
+    margin: 50px 80px 30px;
     padding: 10px 20px;
     background: rgba(255, 255, 255, 0.08);
     display: inline-block;
     color: #ffb742;
     border-radius: 12px;
+    
 }
 
 .about{
@@ -197,6 +198,8 @@ body{
 
 .about img{
     width: 380px;
+    margin-left: 30px;
+    border-radius: 6px;
 }
 
 .about .info h3{
@@ -233,7 +236,8 @@ body{
 
 .skills .left .info p{
     color: #ccc;
-    font-size: 14px;
+    font-size: 14px;    
+    padding: 10px 0;
 }
 
 .skills .left button{
@@ -263,6 +267,161 @@ body{
 .skills .right .item i{
     font-size: 34px;
     color: #fff;
+}
+
+.education{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.education .line{
+    width: 240px;
+}
+
+.education .line h4{
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 70px;
+}
+
+.education .line_cricle{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.education .line_cricle .line_alph{
+    width: 8px;
+    height: 100%;
+    background-color: #363636;
+    border-radius: 30px;
+}
+
+.education .line_cricle span{
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    background-color: #fb8c00;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
+.education .line_cricle span:nth-child(2){
+    margin-top: 9rem;
+}
+
+.education .line_cricle span:nth-child(3){
+    margin-top: 17rem;
+}
+
+
+.experience{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.experience .line{
+    width: 240px;
+}
+
+.experience .line h4{
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 4.5rem;
+    padding-top: 1rem;
+}
+
+.experience .line_cricle{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.experience .line_cricle .line_alph{
+    width: 8px;
+    height: 100%;
+    background-color: #363636;
+    border-radius: 30px;
+}
+
+.experience .line_cricle span{
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    background-color: #fb8c00;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
+.experience .line_cricle span:nth-child(2){
+    margin-top: 9rem;
+}
+
+.experience .line_cricle span:nth-child(3){
+    margin-top: 17rem;
+}
+
+.experience .line_cricle span:nth-child(4){
+    margin-top: 26rem;
+}
+
+
+.experience .left{
+    width: 740px;
+}
+
+.experience .left .info h3{
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.experience .left .info p{
+    color: #ccc;
+    font-size: 14px;    
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.education .left{
+    width: 740px;
+}
+
+.education .left .info h3{
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.education .left .info p{
+    color: #ccc;
+    font-size: 14px;    
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.download-cv{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 50px;
+}
+
+.download-cv h4{
+    color: #ccc;
+    padding: 8px 14px;
+}
+
+.download-cv a{
+    padding: 8px 18px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    background: #fb8c00;
+    border-radius: 8px;
 }
 
 footer{
