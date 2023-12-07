@@ -470,7 +470,70 @@ body{
     background: #fb8c00;
     border-radius: 8px;
 }
+/* ================================ End Home Page ==================================== */
 
+/* ================================= Portfolio Page ================================= */
+.portfolios{
+    width: 100%;
+}
+
+.portfolios .portfolio_list{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolios .portfolio_list .portfolio_item{
+    width: 440px;
+    height: 480px;
+    border-radius: 10px;
+    margin: 5px 5px;
+    background: #171a1f;
+    display: block; 
+    overflow: hidden;
+}
+
+.portfolios .portfolio_list .portfolio_item .portfolio_items{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.portfolios .portfolio_list .portfolio_item .portfolio_items img{
+    width: 100%;
+}
+
+.portfolios .portfolio_list .portfolio_item .item{
+    position: absolute;
+    margin-top: -4rem;
+    width: 440px;
+    height: 70px;
+    padding: 5px;
+    display: block;
+    align-items: center;
+    cursor: pointer;
+}
+
+.portfolios .portfolio_list .portfolio_item .item h3{
+    color: #fff;
+}
+
+.portfolios .portfolio_list .portfolio_item .my-profile{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.portfolios .portfolio_list .portfolio_item .my-profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* ================================= Portfolio End ================================= */
+
+/* ============================ Footer Session ======================================= */
 footer{
     position: relative;
     background: #1c1c1c;
@@ -704,7 +767,7 @@ footer .cols .news-col form button i{
         position: absolute;
         display: inline-block;
         width: 380px;
-        height: 1000vh;
+        height: 100vh;
         background: #1b1e22;
         left: -380px;
         top: 0;
