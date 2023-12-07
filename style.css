@@ -34,6 +34,23 @@ body{
     display: flex;
 }
 
+.navbar ul .logo-beartai{
+    display: none;
+} 
+
+.navbar ul .head_title{
+    display: none;
+    height: 80px;
+    width: 100%;
+}
+
+.navbar ul .head_title span{
+    color: #ffb742;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 15px 10px;
+}
+
 .navbar ul li{
     list-style: none;
 }
@@ -52,6 +69,28 @@ body{
 
 .navbar ul li:last-child a{
     margin: 0;
+}
+
+.navbar #btn-nav{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    background: #272a2c;
+    display: none;
+}
+
+
+
+.navbar #btnNavclose i{
+    font-size: 35px;
+    color: #ffb742;
+}
+
+.navbar #btn-nav i{
+    font-size: 35px;
+    color: #ffb742;
 }
 
 .hire-btn{
@@ -374,6 +413,10 @@ body{
     width: 740px;
 }
 
+.experience .left .info{
+    padding: 0 15px;
+}
+
 .experience .left .info h3{
     color: #fff;
     font-size: 26px;
@@ -389,6 +432,10 @@ body{
 
 .education .left{
     width: 740px;
+}
+
+.education .left .info{
+    padding: 0 15px;
 }
 
 .education .left .info h3{
@@ -625,6 +672,8 @@ footer .cols .news-col form button i{
 
     .main p.title{
         font-size: 36px;
+        padding: 10px;
+        text-align: center;
     }
 
     .main p.subtitle{
@@ -643,17 +692,77 @@ footer .cols .news-col form button i{
 }
 
 @media screen and (max-width: 650px) {
-    
-    .navbar{
-        justify-content: center;
+    .navbar #btn-nav{
+        display: block;
     }
 
-    .navbar h2{
-        display: none;
+    .navbar{        
+        justify-content: space-between;
+    }
+
+    .navbar ul{
+        position: absolute;
+        display: inline-block;
+        width: 380px;
+        height: 1000vh;
+        background: #1b1e22;
+        left: -380px;
+        top: 0;
+        z-index: 1000;
+        transition: all 300ms;
+    }
+
+    .navbar ul .logo-beartai{
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+
+    .navbar ul .logo-beartai img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar ul .head_title{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        padding: 5px;
+        justify-items: center;
+        justify-content: space-between;
+    }
+
+
+    .navbar ul .head_title #btnNavclose{
+        width: 40px;
+        height: 40px;
+        margin-left: 15px;
+        cursor: pointer;
+        border-radius: 6px;
+        border: none;
+        display: block;
+        background: #272a2c;
+    }
+
+    .navbar ul li{
+        padding: 0;
+        margin: auto;
+        width: 95%;
     }
 
     .navbar ul li a{
-        font-size: 14px;
+        font-size: 16px;
+        padding: 12px 18px;
+        display: block;
+        margin-bottom: 2px;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .navbar ul li a:hover{
+        background: #15181b;
     }
 
     .main{
@@ -668,6 +777,8 @@ footer .cols .news-col form button i{
 
     .main p.title{
         font-size: 28px;
+        padding: 10px;
+        text-align: center;
     }
 
     .main p.subtitle{
