@@ -504,31 +504,80 @@ body{
     width: 100%;
 }
 
-.portfolios .portfolio_list .portfolio_item .item{
+
+.portfolios .portfolio_list .portfolio_item .items .item{
     position: absolute;
     margin-top: -4rem;
     width: 440px;
     height: 70px;
     padding: 5px;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.portfolios .portfolio_list .portfolio_item .items .item:hover{
+    background-color: #1c1c1c96;
+    transition: all 600ms;
+    opacity: 100%;
+}
+
+.portfolios .portfolio_list .portfolio_item .items .item .btn-like{
+    padding: 0 10px;
+}
+
+.portfolios .portfolio_list .portfolio_item .items .item .btn-like button{
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    text-align: center;
+    outline: none;
+    border: 0;
+    border-radius: 6px;
     cursor: pointer;
 }
 
-.portfolios .portfolio_list .portfolio_item .item h3{
+.portfolios .portfolio_list .portfolio_item .items .item .btn-like button:hover{
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.portfolios .portfolio_list .portfolio_item .items .item h3{
     color: #fff;
 }
 
 .portfolios .portfolio_list .portfolio_item .my-profile{
     width: 100%;
+    height: 80px;
+    margin: auto;
+    align-items: center;
     display: flex;
     justify-content: start;
+    color: #fff;
+    padding: 0 20px;
 }
 
 .portfolios .portfolio_list .portfolio_item .my-profile img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+.portfolios .portfolio_list .portfolio_item .my-profile h4{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.portfolios .portfolio_list .portfolio_item .my-profile span{
+    font-size: 20px;
+    padding: 8px 16px;
+    background-color: #7b7b7b;
+    border-radius: 8px;
+    color: #d3d3d3;
 }
 
 /* ================================= Portfolio End ================================= */
